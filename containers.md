@@ -15,11 +15,11 @@ Show a list of containers
 % docker container ls               // show a list of containers
 % docker ps                         // old way
 % docker container ls -a            // show list of running and previously created containers 
-```
+```  
 
-top a running container  
-``docker
-% docker container stop 7b19        // stop container with first 4 letter of container ID
+Stop a running container  
+```docker
+% docker container stop 7b19        // stop container with first 4 letters of container ID
 ```  
 
 Start new container with --name option  
@@ -34,7 +34,7 @@ Show container logs for a specific container
 ```
 
 Cleaning up unwanted containers with 'rm' command, 'rm' will only remove the stop container, running container will stay on the system.  
-``docker
+```docker
 % docker container rm a05a 9d7d 7b19 3b62       // remove not-running container by IDs 
 ```
 
