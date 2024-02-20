@@ -1,5 +1,3 @@
-# DOCKER CONTAINER
-
 ## Container Commands
 
 Start a web server (nginx)  
