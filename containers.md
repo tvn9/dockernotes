@@ -30,5 +30,18 @@ $ docker container run --publish 80:80 --detach --name webhost nginx       // --
 Show container logs for a specific container  
 ```docker
 $ docker container logs webhost        // show logs from webhost container 
+$ docker container logs --help         // use --help to see all log options
 ```
+
+Cleaning up unwanted containers with 'rm' command, 'rm' will only remove the stop container, running container will stay on the system.  
+```docker
+$ docker container rm a05a 9d7d 7b19 3b62       // remove not-running container by IDs 
+```
+
+Remove running containers with 'rm -f' command, this will force the system to remove the specified containers  
+```docker
+$ docker container rm -f a05a 9d7d 7b19 3b62    // 3b62 is a running container, but will be remove now.
+``` 
+
+
 
