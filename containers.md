@@ -56,7 +56,7 @@ Start apache httpd server
 
 Start mysql server  
 ```docker
-% docker container run 3306:3306 -d -p --name db -e MYSQL_RANDOM_ROOT_PASSWORD=yes mysql       // start mysql
+% docker container run -d -p 3306:3306 --name db -e MYSQL_RANDOM_ROOT_PASSWORD=true mysql       // start mysql
 ```  
 
 ### Container CLI Processes Monitoring  
@@ -80,10 +80,23 @@ Show the live container process status such ass CPU, MEM, and NET I/O usage
 
 ### Looking at container from the inside  
 
+Using -it option to start a cli shell on a container  
 ```docker 
 % docker container run -it       // start new container interactively 
 % docker container exec -it      // run additional command in existing container
 ```  
+
+Start bash on existing nginx container  
+```docker 
+% docker container run -it --name nginx-bash nginx bash        // start bash on ngnix container
+```  
+
+Run a full ubuntu image  
+```docker
+% docker container run -it --name ubuntu ubuntu          // start ubuntu image 
+``` 
+
+
 
 ### Looking at different Linux distros in containers
 
