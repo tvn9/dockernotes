@@ -59,6 +59,36 @@ Start mysql server
 % docker container run 3306:3306 -d -p --name db -e MYSQL_RANDOM_ROOT_PASSWORD=yes mysql       // start mysql
 ```  
 
+### Container CLI Processes Monitoring  
+
+Show running containers processes  
+```docker
+% docker container ls            // show all running containers
+```  
+
+Show container processes 
+```docker 
+% docker container top mysql     // show processes from mysql container
+% docker container top nginx     // show processes from nginx container
+% docker container stats nginx   // show configuration status from a container
+```   
+
+Show the live container process status such ass CPU, MEM, and NET I/O usage  
+```docker
+% docker container stats      // show running processes status
+```  
+
+### Looking at container from the inside  
+
+```docker 
+% docker container run -it       // start new container interactively 
+% docker container exec -it      // run additional command in existing container
+```  
+
+### Looking at different Linux distros in containers
+
+
+
 
 
 
