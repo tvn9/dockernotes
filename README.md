@@ -1,2 +1,2 @@
-# dockernotes
-Docker Pratice Notes
+# DOCKER for DEVOPS
+Docker Practice Notes
