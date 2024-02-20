@@ -47,7 +47,19 @@ Start and stop an existing container
 ```docker
 % docker start nginx       // start the nginx webserver
 % docker stop nginx        // stop the running nginx webserver
-```
+```  
+
+Start apache httpd server  
+```docker
+% docker container run --publish 8080:80 -d --name httpd-apache httpd      // start apache web server on port 8080
+```  
+
+Start mysql server  
+```docker
+% docker container run 3306:3306 -d -p --name db -e MYSQL_RANDOM_ROOT_PASSWORD=yes mysql       // start mysql
+```  
+
+
 
 
 

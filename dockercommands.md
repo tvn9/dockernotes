@@ -2,9 +2,12 @@
 
 Show docer version and system configuration information  
 ```docker
-% docker version                       // Show current running version of the client and the server
+% docker version                       // show current running version of the client and the server
 % docker info                          // show version and alot more system info
 % docker                               // show a list of available management commands and sub commands
+% docker ps                            // show all docker running processes
+% docker container ls                  // show all docker container processes
+% docker container ls -a               // show all docker containers (runing or not runing)
 ```
 
 ## Docker Command Syntax  
