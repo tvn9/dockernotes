@@ -1,6 +1,6 @@
 ## Basic System Info 
 
-Show docer version and system configuration information  
+Show docker version and system configuration information  
 ```docker
 % docker version                       // show current running version of the client and the server
 % docker info                          // show version and alot more system info
