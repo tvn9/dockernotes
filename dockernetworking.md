@@ -37,7 +37,7 @@ Create a new container and assign it to and existing network at the same time
 
 Connect existing container with existing bridge network 
 ```
-% docker network connect 40360bdf7e8d c1cfe1a5dca9
+% docker network connect myAppNet nginx 
 ```
 
 
