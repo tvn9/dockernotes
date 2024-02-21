@@ -73,7 +73,7 @@ Show container processes
 % docker container stats nginx   // show configuration status from a container
 ```   
 
-Show the live container process status such ass CPU, MEM, and NET I/O usage  
+Show the live container process status such as CPU, MEM, and NET I/O usage  
 ```docker
 % docker container stats      // show running processes status
 ```  
@@ -91,14 +91,39 @@ Start bash on existing nginx container
 % docker container run -it --name nginx-bash nginx bash        // start bash on ngnix container
 ```  
 
-Run a full ubuntu image  
+### Looking at different Linux distros in containers
+
+Adding Ubuntu linux container   
 ```docker
 % docker container run -it --name ubuntu ubuntu          // start ubuntu image 
-``` 
+```  
+
+Exit the container shell will also exit the runing container  
+```
+root@b56ecc59307a:/# exit        // from ubuntu root prompt, type exit -> enter
+```  
+
+To restart a container shell   
+```
+% docker container start -ai ubuntu       // restart an existing ubuntu 
+```   
+
+Install curl on Ubuntu container  
+```
+% apt-get install curl        // download and install curl
+```  
+
+Download Alpine linux distro 
+```
+% docker pull alpine          // download alpine linux image 
+```  
+
+List all images 
+```
+% docker image ls             // list all images  
+```  
 
 
-
-### Looking at different Linux distros in containers
 
 
 
