@@ -25,11 +25,20 @@ Inspect a network in the container
 % docker network inspect bridge        // inspect bridge network
 ```
 
-Create a container network 
+Create a container bridge network 
 ```
 % docker network create myAppNet       // Create myAppNet network
 ``` 
 
+Create a new container and assign it to and existing network at the same time 
+```
+% docker container run -d --name new_nginx --network myAppNet nginx 
+```
+
+Connect existing container with existing bridge network 
+```
+% docker network connect 40360bdf7e8d c1cfe1a5dca9
+```
 
 
 
