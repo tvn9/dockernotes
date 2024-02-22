@@ -34,3 +34,13 @@ Show docker processes from the unix kernel
 % ps aux | grep mongo                    // find mongo docker processs             
 ```
 
+List all existing containers running or not running
+```
+% docker ps                               // list all running containers
+% docker ps --all                         // list all created containers running/not running
+``` 
+
+
+
+
+
